@@ -4,8 +4,8 @@
 
         <div class="form-group">
 
-            <select [(ngModel)]="bookDetails.author">
-                <option disabled hidden [value]="selectUndefinedOptionValue">ユーザ選択</option>
+            <select [(ngModel)]="bookDetails">
+                <option disabled hidden [value]="">ユーザ選択</option>
 
                 <option *ngFor="let charac of Authors" [value]="charac.id">
                     {{charac.first_name + " " + charac.last_name}}
